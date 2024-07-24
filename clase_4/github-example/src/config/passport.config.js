@@ -7,8 +7,8 @@ export const initializePassport = () => {
     "github",
     new GithubStrategy(
       {
-        clientID: "Iv23liA4tQLER1rFSSms",
-        clientSecret: "e59e7ae628e67c7c3d155f142d94d5e307cc682b",
+        clientID: "",
+        clientSecret: "",
         callbackURL: "http://localhost:5000/api/sessions/githubcallback",
         scope: ["user:email"],
       },
