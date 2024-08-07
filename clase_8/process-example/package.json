@@ -1,0 +1,18 @@
+{
+  "name": "process-example",
+  "version": "1.0.0",
+  "main": "example.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node example.js --port=8000 --mode=dev --user=admin",
+    "start": "node example.js --port=3000 --mode=prod --user=superadmin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
