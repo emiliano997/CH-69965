@@ -1,11 +1,11 @@
-import { toyModel } from "../models/toy.model.js";
+import { toyModel } from "../../models/toy.model.js";
 
 // export const getToys = async () => {
 //   const toys = await toyModel.find();
 //   return toys;
 // };
 
-class ToyService {
+export class ToyService {
   async getAll() {
     return await toyModel.find();
   }
@@ -20,4 +20,4 @@ class ToyService {
 }
 
 // export default new ToyService();
-export const toyService = new ToyService();
+// export const toyService = new ToyService();

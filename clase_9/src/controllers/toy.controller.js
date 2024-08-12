@@ -1,4 +1,4 @@
-import { toyService } from "../services/toy.service.js";
+import { toyService } from "../services/index.js";
 
 class ToyController {
   async getAll(req, res) {

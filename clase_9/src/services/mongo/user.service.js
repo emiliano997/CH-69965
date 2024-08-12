@@ -1,6 +1,6 @@
-import { userModel } from "../models/user.model.js";
+import { userModel } from "../../models/user.model.js";
 
-class UserService {
+export class UserService {
   async getAll() {
     return await userModel.find();
   }
@@ -14,4 +14,4 @@ class UserService {
   }
 }
 
-export const userService = new UserService();
+// export const userService = new UserService();
