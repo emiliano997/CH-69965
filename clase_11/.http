@@ -1,0 +1,13 @@
+GET http://localhost:5000/api/contacts
+
+
+POST http://localhost:5000/api/contacts
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "123456789"
+}
+
+GET http://localhost:5000/api/contacts/1
