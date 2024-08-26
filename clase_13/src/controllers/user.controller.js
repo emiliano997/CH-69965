@@ -1,4 +1,5 @@
 import { mailService } from "../services/mail.service.js";
+import { smsService } from "../services/sms.service.js";
 
 // DB
 const users = [];
@@ -25,6 +26,11 @@ export class UserController {
       // html: `<h1>New user registered</h1><p>Name: ${name}</p><p>Email: ${email}</p><p>Phone: ${phone}</p>`,
       type: "welcome",
     });
+
+    await smsService.sendMessage(
+      phone,
+      "Bienvenido a nuestro servicio de mensajes masivos"
+    );
 
     return res.status(201).json(user);
   }

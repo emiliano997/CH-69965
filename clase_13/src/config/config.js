@@ -12,4 +12,9 @@ export const config = {
       pass: process.env.MAILER_PASSWORD,
     },
   },
+  sms: {
+    sid: process.env.TWILIO_SID,
+    authToken: process.env.TWILIO_AUTH_TOKEN,
+    smsNumber: process.env.TWILIO_SMS_NUMBER,
+  },
 };
